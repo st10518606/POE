@@ -1,0 +1,183 @@
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Navigation Header --- */
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* --- Sections --- */
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #1a1a1a;
+    margin-top: 0;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+section h3 {
+    color: #444;
+}
+
+/* --- Home / Hero Section --- */
+.home {
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS09NjFSqlYLt-F8pCuaNiUnV8z4ruXbPmc3M-HjZi0jQ&s=10') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 2rem;
+}
+
+.home h2 {
+    color: white;
+    border-bottom: none;
+    font-size: 2.5rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0097a7;
+}
+
+/* --- Images --- */
+.main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Services Grid --- */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.service {
+    background-color: #f1f8f9;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #00bcd4;
+}
+
+.service h3 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+/* --- Lists --- */
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Contact Form --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin-top: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button[type="submit"] {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 3rem;
+}
